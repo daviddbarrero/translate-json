@@ -1,0 +1,3 @@
+{
+    "landing.title": "Create your online store"
+}
