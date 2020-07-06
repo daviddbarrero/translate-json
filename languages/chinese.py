@@ -5,7 +5,7 @@ import json
 
 translator = Translator()
 
-file = 'input.json'
+file = '../data/en.json'
 finaljson = {}
 
 
@@ -13,15 +13,12 @@ with open(file) as f:
     data = json.load(f)
 
 for idx, i in enumerate(data):
-    # Change output language by adding this to the next line :
-    # translation = translator.translate(data[i], *LANGUAGE OF OUTPUT*  )
-    translation = translator.translate(data[i])
+    # Here you can change the lenguage
+    translation = translator.translate(data[i] ,'ko' )
     print(translation.text)
     data[i] = translation.text
 
 
-with open('translation.json','w') as f:
+with open('chinese.json','w') as f:
     json.dump(data, f, indent=4)
-
-
 
