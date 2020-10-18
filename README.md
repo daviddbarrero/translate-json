@@ -5,7 +5,7 @@ The normal version will translate any language of the json to english but you ca
 # How to use it :
 We clone the repository
 <pre>
-git clone https://github.com/daviddbarrero/translate-json 
+git clone https://github.com/dvidd/translate-json 
 </pre> Install  googletrans
 <pre> $ pip install googletrans
 </pre>
